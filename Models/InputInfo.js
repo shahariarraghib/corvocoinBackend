@@ -4,17 +4,17 @@ const mongoose = require("mongoose");
 
 const inputInfo = mongoose.Schema(
   {
-    inputvalue: {
+    email: {
       type: String,
       
     },
 
-   selectSection: {
+    Name: {
       type: String,
       
     },
 
-    identity: {
+    Phone: {
       type: String,
      
     },

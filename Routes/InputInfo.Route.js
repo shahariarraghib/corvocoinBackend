@@ -3,7 +3,7 @@ const router = express.Router();
 const inputInfoController = require("../Controllers/InputInfo.Controller");
 
 router
-  .route("/")
+  .route("/inputValue")
   .get(inputInfoController.getInputInfo)
   .post(inputInfoController.createInpuInfo );
 
