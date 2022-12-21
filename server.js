@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-// const dotenv = require("dotenv").config();
+const dotenv = require("dotenv").config();
 const colors = require("colors");
 
 const app = require("./app");
@@ -10,7 +10,7 @@ mongoose.connect(process.env.DATABASE_LOCAL).then(() => {
 });
 
 // server port
-const port = process.env.PORT ;
+const port = process.env.PORT || 8000;
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`.red.bold);
